@@ -1,6 +1,12 @@
 const Product = require("../Models/Product");
 
 
+module.exports.home=(req,res)=>{
+
+  return res.redirect('/products');
+  
+}
+
 // function to create the product in database
 module.exports.createProduct = async (req, res) => {
   try {
